@@ -31,7 +31,7 @@ def get_paa(x):
         # write to csv
         xt = bagi2[1:]
         xc = str(textwrap.fill(xt[0], width=100))
-        with open('data2.csv', 'a+') as csvfile:
+        with open('data2.csv', 'a') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(dt)
             writer.writerow(bagi2[1:])
