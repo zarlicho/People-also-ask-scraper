@@ -1,7 +1,5 @@
 from distutils.fancy_getopt import wrap_text
 import textwrap
-from nbformat import write
-from numpy import save
 import requests_html
 import csv
 session = requests_html.HTMLSession()
