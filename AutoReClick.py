@@ -34,7 +34,7 @@ def get_paa(x):
         with open('data2.csv', 'a+') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(dt)
-            writer.writerow(xc.split(","))
+            writer.writerow(bagi2[1:])
             writer.writerow("\n")
 for x in range(len(srchData)):   
     r = session.get('https://www.google.com/search?q='+srchData[x])
